@@ -1,0 +1,103 @@
+body { 
+    background: rgb(235, 236, 216);
+}
+
+@import 'https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'; 
+
+.navbar-dark .navbar-nav .nav-link.active { 
+    color: #61dafb !important;
+}
+
+textarea { 
+    resize: none !important;
+}
+textarea:focus, input:focus {  
+box-shadow: none !important;
+border-color: #61dafb !important; 
+}
+
+input, textarea { 
+   border-color:rgba(0, 105, 134, 0.4)  !important; 
+}
+.card-header { 
+    border: 0 !important
+} 
+.card-body { 
+    border-top: 2px solid rgba(0, 105, 134, 0.4) ;
+}
+
+.card-body .empty-post { 
+    position: relative; 
+    /* flex-grow: 1; */
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #21573f ;
+    text-align: right;
+    margin-right: 300px;
+}
+.card-body .empty-post::after { 
+    content: '';
+    position: absolute;
+    top: -15px;
+    right: -250px;
+    background-image: url(arrow.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 240px 110px;
+    width: 240px;
+    height: 115px;
+
+}
+
+.card-header h4 { 
+    margin: 0;
+    font-size: 1.3rem;
+    line-height: 1.3rem;
+}
+.btn-react {
+    background: #1c90b1 !important;
+    color: #fff !important;
+}
+.btn-react:hover { 
+    background: #084657 !important;
+    color: #fff;
+}
+
+a::-moz-focus-inner{ 
+    outline: 0;
+}
+a::-moz-focus-outer{ 
+    border: 0 ;
+}
+a:focus { 
+    outline: none;
+}
+.focus-height-200 { 
+    height: 38px;
+    overflow-y: hidden;
+    transition: 300ms ease;
+}
+.focus-height-200:focus { 
+    height: 200px;
+    display: block;
+    overflow-y: auto;
+}
+
+.table th { 
+    border-top: 0 !important;
+    border-bottom: 1px solid rgba(30, 89, 149, 0.267) !important;
+}
+
+table { margin: 0; }
+tbody tr td  { 
+    vertical-align: middle !important;
+}
+td { 
+    border: 0 !important;
+}
+thead tr th:last-child { 
+    width: 120px;
+}
+thead tr th:nth-child(2) { 
+    width: 60%;
+}
